@@ -1,0 +1,5 @@
+refine' may31a_x
+refine_npoints' 10
+output" standard_output standard_graphs
+output" fit_z1L standard_output standard_graphs
+xkey' gamma

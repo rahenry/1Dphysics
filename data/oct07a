@@ -1,0 +1,15 @@
+method matrix
+L 100
+N 3
+angle_style -2 -1 0 1 2
+angle_style 0
+lambda 0.5 1.0 1.5
+phi 0 0.1 0.5
+swap_lambda 0 1
+
+calc_spectrum 0
+skip_model 1
+fix_pfs 1
+
+output" sep06_test plot_spectrum
+output" sep06_test

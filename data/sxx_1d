@@ -1,0 +1,50 @@
+input dmrg1
+diag_method default
+$npoints 35
+
+$fp h
+
+model_type sxx
+bc 0
+
+lambda 1
+n_states 2
+h 0. 2. $npoints
+lambda 0. 2. $npoints
+L 20
+
+output"
+conserve None
+
+OUTPUT
+new ncols=2 name=pf_test scale=4 dpi=400
+
+plot Plot2D
+xkey=lambda ykey=h key=entropy
+
+plot Plot2D
+xkey=lambda ykey=h key=e_0
+
+plot Plot2D
+xkey=lambda ykey=h key=e_1
+
+plot Plot2D
+xkey=lambda ykey=h key=gap_1
+
+plot Plot2D
+xkey=lambda ykey=h key=mag_z
+
+plot Plot2D
+xkey=lambda ykey=h key=mag_x
+
+plot Plot2D
+xkey=lambda ykey=h key=mag_y
+
+plot Plot2D
+xkey=lambda ykey=h key=con_z
+
+plot Plot2D
+xkey=lambda ykey=h key=con_x
+
+plot Plot2D
+xkey=lambda ykey=h key=con_y

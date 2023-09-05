@@ -1,0 +1,15 @@
+L 6
+bc 0
+hc 0
+n_states 1
+N 3
+n_correlation_sites' -1
+n_points_generated 10000
+n_bins 100
+generate_gs_depth 3
+multiplot_targets" pfs energies
+skip_pfs 0
+phi 0
+conserve None
+mu -1
+model_type fp

@@ -1,0 +1,16 @@
+method exact
+model_type fpXYW
+eta 0.1 0.9 5
+kappa 0.1 0.9 5
+L 5 6 7
+bc 0
+hc 0
+N 3
+n_states 1
+min_sweeps 3
+max_hours 0.7
+max_sweeps 1000
+xkey' eta
+chi_max 25
+max_E_err 1E-6
+output' basic_graphs

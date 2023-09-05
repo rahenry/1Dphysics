@@ -1,0 +1,22 @@
+L 3 4 5
+L 3 4 5 6
+L 3
+L 3 4 5 6
+L 3
+L 3 4 5 6 7 8 9
+N 3
+L 9
+gamma 0.1 0.5
+phi 0 0.2 0.45 0.5
+bc 0 1
+bc 1
+output" plot_spectrum
+method exact matrix
+method simple_ed
+method ed2 simple_ed
+method ed2
+conserve None
+model_type fptest fp fptest2
+model_type fp
+calc_spectrum 1
+output" plot_ed2

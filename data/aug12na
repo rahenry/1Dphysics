@@ -1,0 +1,8 @@
+method exact
+L 5
+output" standard_output
+gamma 0.4425 0.445 5
+phi 0.217 0.218 5
+N 3
+M' 2
+fix_pfs 1

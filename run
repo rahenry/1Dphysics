@@ -1,0 +1,7 @@
+#!/bin/bash
+wrapperfunction() {
+source /home/rah/miniconda/m1/bin/activate
+}
+wrapperfunction
+# python3 --version
+python3 run.py "$@"

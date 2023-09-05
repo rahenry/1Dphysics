@@ -1,0 +1,26 @@
+input dmrg1
+
+model_type sxx
+diag_method default
+L 10
+bc 1
+fidelity_parameter h
+fidelity_delta 1E-6
+$n 50
+h 0.2 1.8 $n
+lambda 0.1 0.9 $n
+N 2
+conserve None
+n_states 3
+
+OUTPUT
+new ncols=1 name=pf_test scale=4 dpi=400
+
+plot Plot2D
+xkey=h ykey=lambda key=e_0
+
+plot Plot2D
+xkey=h ykey=lambda key=e_exact
+
+plot Plot2D
+xkey=h ykey=lambda key=e0_error

@@ -1,0 +1,19 @@
+input dmrg1
+model_type fpXYW
+eta 0.2 0.8 5
+kappa 0.5
+L 5
+bc 0
+hc 0
+N 3
+n_states 1
+min_sweeps 3
+fidelity_parameter eta
+fidelity_delta 1E-4
+max_hours 0.7
+max_sweeps 1000
+xkey' L
+chi_max 5
+max_E_err 1E-3
+do' fidelity
+output' fidelity

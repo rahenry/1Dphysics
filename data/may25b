@@ -1,0 +1,12 @@
+input dmrg1
+gamma 0.5582 0.5608 50
+L 100 200 300 400
+bc 0
+N 3
+xkey' gamma
+fidelity_parameter gamma
+fidelity_delta 1E-5
+output" standard_output standard_graphs
+max_sweeps 20
+chi_max 50
+max_S_err 1E-6

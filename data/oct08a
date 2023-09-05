@@ -1,0 +1,12 @@
+method matrix
+L 5
+N 3
+lambda 0.1 2.0 20
+phi 0. 1. 50
+
+calc_spectrum 0
+skip_model 1
+swap_lambda 0 1
+fix_pfs 1
+xkeys" phi
+output" fin_cl_pf_trajectories

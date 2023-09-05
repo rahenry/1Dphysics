@@ -1,0 +1,37 @@
+method exact
+L 4
+N 3
+$m 100
+lambda_real 0.01 1.5 $m
+lambda_imag 0.01 1.4 $m
+conserve None
+make_systems' 1
+
+q0' -3.142
+q1' 3.142
+k0' -3.142
+k1' 3.142
+find_eps2 1
+
+fix_pfs 1
+
+analyse_eigs 1
+
+OUTPUT
+
+new ncols=2 name=pf_test2 scale=4
+
+plot EP_Plot
+key=min_E_distance draw_eps=1 lab=(a) lab_col=white
+
+plot EP_Plot
+key=min_overlap draw_eps=1 lab=(a) lab_col=white
+
+plot EP_Plot
+key=min_pf_distance draw_eps=1 lab=(a) lab_col=white
+
+plot EP_Plot
+key=min_pf_distance0 draw_eps=1 lab=(a) lab_col=white
+
+plot EP_Plot
+key=min_pf_distance_minus draw_eps=1 lab=(a) lab_col=white

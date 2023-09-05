@@ -1,0 +1,1 @@
+'fsL', ylims=[-5, 9], name='fsL', xlab=r'$\gamma$', ylab=r'$\chi_F / L$'

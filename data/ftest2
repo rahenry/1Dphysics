@@ -1,0 +1,31 @@
+method matrix
+L 5
+N 2 3
+$m 10
+lambda_real -1.1 1.1 $m
+lambda_imag -1.1 1.1 $m
+
+q0 -3.142
+q1 3.142
+k0 -3.142
+k1 3.142
+find_eps2 1
+
+skip_model 1
+fix_pfs 1
+make_systems' 1
+
+OUTPUT
+new ncols=3 name=pf_test scale=4
+
+plot EP_Plot
+filter L=5
+key=epk draw_eps=1
+
+plot EP_Plot
+filter L=5 N=2
+key=min_pf_distance0 draw_eps=1
+
+plot EP_Plot
+filter L=5 N=3
+key=min_pf_distance0 draw_eps=1

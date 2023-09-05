@@ -1,0 +1,15 @@
+L 6
+N 3
+lambda 0.1 2.0 101
+phi 0
+bc 1
+method exact
+conserve None
+model_type fp
+do" periodic_lambda_test
+
+OUTPUT
+new ncols=4 name=pf_test scale=2 dpi=400 transpose=1 fontscale=0.6
+
+plot LinePlot
+xkey=lambda key=zero_fidelities sequence=1 markersize=1 xmin=0 ylab=overlap

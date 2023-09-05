@@ -1,0 +1,38 @@
+method matrix
+model_type xyh
+L 10 30
+N 2
+$m 100
+$lr 1.5
+$li 1.5
+lambda_real -$lr $lr $m
+lambda_imag -$li $li $m
+conserve None
+make_systems' 1
+scale lambda
+mu 0
+L_offset 2
+fix_pfs 1
+skip_model 1
+measure_all_dist 0
+skip_model 1
+
+q0' -3.142
+q1' 3.142
+k0' -3.142
+k1' 3.142
+find_eps2 1
+free_test 0
+
+$o1 cbar_pos=lower__right no_rotate=1 skip_trivial=0 two_colour_EPs=1 xkey=lambda labkey=\lambda
+
+OUTPUT
+new ncols=2 name=plot1 scale=4
+
+plot EP_Plot
+filter L=10
+key=min_pf_distance0 draw_eps=1 $o1
+
+plot EP_Plot
+filter L=30
+key=min_pf_distance0 draw_eps=1 $o1

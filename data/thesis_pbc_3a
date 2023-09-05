@@ -1,0 +1,24 @@
+L 3
+N 3
+lambda 0.1 10.0 10
+bc 1
+method exact
+conserve None
+model_type fp
+do" count_zeros
+swapXZ 0 1
+
+SUBSET
+L 2
+N 4
+END
+SUBSET
+L 4
+N 4
+END
+
+OUTPUT
+new ncols=1 name=pf_test invis=1 nosize=1
+
+plot Table
+xkey=L ykey=N zkey=nzeros

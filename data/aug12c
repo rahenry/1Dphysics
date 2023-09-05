@@ -1,0 +1,9 @@
+method matrix
+skip_model 1
+L 50 60 2
+output" gse_test
+gamma 0.2 0.6 11
+phi 0.1 0.5 11
+N 3
+M' 2
+fix_pfs 1

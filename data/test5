@@ -1,0 +1,6 @@
+input dmrg1
+gamma 0.51
+L 50
+bc 0
+N 3
+max_sweeps 5

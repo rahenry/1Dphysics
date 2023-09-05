@@ -1,0 +1,13 @@
+method matrix
+skip_model 1
+output" fin_cl_pf_trajectories
+N 3
+M' 2
+fix_pfs 1
+L 5
+lambda 0.87 0.885548807 0.90
+phi -0.1 0.1 50
+phi 0. 2.0 501
+xkeys" phi lambda
+depth 2
+do_rotations 0

@@ -1,0 +1,12 @@
+method exact
+L 5
+bc 0
+N 3
+xkey' gamma
+fidelity_parameter gamma
+fidelity_delta 1E-6
+output" standard_output standard_graphs
+max_sweeps 15
+chi_max 50
+phi 0 0.0833333 0.166666
+gamma 0.2 0.8 30

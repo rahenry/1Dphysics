@@ -1,0 +1,19 @@
+method exact
+L 5
+bc 0
+N 3
+xkeys" lambda phi
+skip_exact 1
+lambda 0.5 1.0 5
+phi 0 0.5 5
+conserve None
+
+OUTPUT
+new ncols=3 letter_labels
+
+plot Trajectory
+xkey=lambda zkey=pfs
+npoints=3
+plot Trajectory
+xkey=phi zkey=pfs
+plot abc

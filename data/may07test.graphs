@@ -1,0 +1,1 @@
+'gamma', 'fsL', ylims=[-30, 10], name='test', exclude=['L']

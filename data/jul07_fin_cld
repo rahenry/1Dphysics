@@ -1,0 +1,14 @@
+method none
+L 10 15
+bc 0
+N 3
+xkey' gamma
+output" fin_complexlambda3
+max_sweeps 15
+chi_max 50
+phi 0
+phi 0 0.166666 0.3333333 0.083333333
+phi 0. 0.5 10
+gamma 0.3 0.7
+gamma 0.5 0.55 0.6 0.7
+conserve None

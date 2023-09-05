@@ -1,0 +1,19 @@
+method poly
+bc 0
+xkey' gamma
+output" fin_complexlambda3
+phi 0. 0.5
+gamma 0.9
+conserve None
+method poly
+L 10 15 20
+bc 0
+N 2
+xkey' gamma
+output" fin_complexlambda3
+phi 0. 1. 11
+gamma 0.5 0.6 0.7 0.8
+conserve None
+n_points_generated 50000
+n_bins 500
+generate_gs_depth 3

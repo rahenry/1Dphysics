@@ -1,0 +1,12 @@
+input dmrg1
+model_type fp
+gamma 0.01 0.99 50
+L 20 30
+bc 0
+do nonh_overlap
+hc 0
+N 3
+diag_method arpack
+conserve Q
+chi_max 10
+mixer 0

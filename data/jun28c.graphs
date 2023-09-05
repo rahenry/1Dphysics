@@ -1,0 +1,2 @@
+@'z1L', ylims=[0, 1.1], xlims=[0.5329, None], name='z1L_small', markersize=3.5
+@'fsL', ylims=[0, 1.1], xlims=[0.5329, None], name='fsL_small', markersize=3.5

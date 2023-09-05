@@ -1,0 +1,11 @@
+L 6
+N 3
+lambda 0.5
+bc 1
+method ed3
+conserve None
+model_type fp
+do" count_zeros
+swapXZ 0 1
+L 4
+N 4

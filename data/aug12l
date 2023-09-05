@@ -1,0 +1,9 @@
+method matrix
+skip_model 1
+L 50 200 350 500
+output" mtest4
+gamma 0.450 0.505 51
+phi 0. 0.01 51
+N 2 3
+M' 2
+fix_pfs 1

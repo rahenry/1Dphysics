@@ -1,0 +1,8 @@
+method matrix
+L 100 110 2
+L 200 210 2
+L 500 510 1
+output" gse_test
+gamma 0.4996 0.5
+phi 0.1959385185788418 0.2
+N 2

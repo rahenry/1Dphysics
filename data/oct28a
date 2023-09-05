@@ -1,0 +1,23 @@
+input dmrg1
+gamma 0.38 0.62 10
+L 10 20 30
+bc 0
+N 3
+xkey' gamma
+fidelity_parameter gamma
+fidelity_delta 1E-5
+max_sweeps 20
+chi_max 20
+max_S_err 1E-4
+conserve Q
+
+OUTPUT
+new ncols=3 name=pf_test scale=2 dpi=400
+
+plot Scatter
+xkey=gamma zkey=L
+scatter key=e_0 markersize=1.2
+
+plot Scatter
+xkey=gamma zkey=L
+scatter key=o markersize=1.2

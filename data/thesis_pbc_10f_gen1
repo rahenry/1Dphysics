@@ -1,0 +1,11 @@
+N 5
+L 2 3 4 5 6
+bc 1
+method ed3
+conserve None
+model_type fp
+swapXZ 1
+lambda 5.0
+phi 0
+N 7
+L 2 3 4 5

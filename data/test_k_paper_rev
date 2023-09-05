@@ -1,0 +1,10 @@
+method exact
+L 4
+N 3
+phi 0. 0.1 0.5
+bc 0
+lambda 1
+mu 0
+swapXZ 1
+calc_spectrum 1
+fix_pfs 1

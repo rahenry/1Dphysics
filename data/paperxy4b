@@ -1,0 +1,24 @@
+method exact
+L 4
+N 2
+model_type xyh2
+phi 0. 0.1 0.5
+bc 0
+eta 0.7
+mu 0
+h 0
+calc_spectrum 1
+fix_pfs 1
+L_offset 2
+
+OUTPUT
+new ncols=2 name=pf_test scale=2 dpi=400 transpose=1 fontscale=0.6
+
+plot Scatter
+xlab=$\Re(E)$ ylab=$\Im(E)$ lim_buffer=0.1 xinclude=0 yinclude=0 label_pos=upper__left lab=ETAS
+scatter colour=red key=energies_matrix marker=x markersize=5 mew=0.5
+scatter colour=blue key=energies markersize=1.2
+
+plot Scatter
+xlab=$\Re(\epsilon)$ ylab=$\Im(\epsilon)$ xinclude=0 yinclude=0 label_pos=upper__left label_pos=lower__left lab=ETAS label_pos=upper__left
+scatter colour=blue key=pfs

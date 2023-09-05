@@ -1,0 +1,10 @@
+L 2 3 4 5 6 7
+N 3
+lambda 0.9
+bc 1
+method exact
+conserve None
+model_type fpzeros
+do" count_zeros
+L 2 3
+N 7

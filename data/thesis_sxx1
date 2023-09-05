@@ -1,0 +1,34 @@
+input dmrg1
+diag_method default
+$npoints 50
+
+$fp h
+
+model_type sxx
+bc 0
+
+lambda 1
+n_states 2
+h 0. 2. $npoints
+lambda 0. 2. $npoints
+L 21
+
+output"
+conserve None
+
+$p1 xkey=lambda ykey=h xlab=$\lambda$ ylab=$h$
+
+OUTPUT
+new ncols=2 name=pf_test scale=4 dpi=400
+
+plot Plot2D
+$p1 key=entropy lab=$S$
+
+plot Plot2D
+$p1 key=mag_z lab=$\langle\sum_j\sigma_j^z\rangle$
+
+plot Plot2D
+$p1 key=con_z lab=$\langle\sigma^z_{L/2}\sigma^z_{L/2+1}\rangle$
+
+plot Plot2D
+$p1 key=con_x lab=$\langle\sigma^x_{L/2}\sigma^x_{L/2+1}\rangle$

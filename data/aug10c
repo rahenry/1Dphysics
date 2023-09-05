@@ -1,0 +1,8 @@
+method matrix
+skip_pfs 1
+L 40
+output" mtest3
+output" oe_1
+gamma 0.45
+phi 0.242
+N 3

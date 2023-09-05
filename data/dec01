@@ -1,0 +1,24 @@
+method exact
+L 4
+N 3
+$m 20
+lambda_real 0.01 1.5 $m
+lambda_imag 0.01 1.5 $m
+phi 1.5
+calc_spectrum 1
+make_systems' 1
+
+find_eps2 1
+analyse_eigs 1
+load_only' 1
+
+q0 -3.1
+q1 0.1
+k0 -0.1
+k1 3.1
+
+OUTPUT
+new ncols=2 name=matrix_info scale=4
+
+plot EP_Plot
+key=min_E_distance draw_eps=1 lab=(a) lab_col=white

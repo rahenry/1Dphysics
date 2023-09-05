@@ -1,0 +1,1 @@
+'fsL', ylims=[2.15, 2.2], name='chi_s', xlab=r'$\gamma$', ylab=r'$\chi_s$', markersize=3.5

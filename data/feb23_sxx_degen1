@@ -1,0 +1,14 @@
+input dmrg1
+diag_method default
+n_states 5
+
+model_type sxx
+bc 0
+
+h 1.0
+lambda 1.0
+L 51
+
+output" print_energies
+conserve None
+

@@ -1,0 +1,14 @@
+Lexp(x, A, B, C, D): return A/(x+1) + B*numpy.exp(-C*x) + D
+L1(x, A, B): return A/(x+1) + B
+L2(x, A, B): return A/(x+1)/(x+1) + B
+L3(x, A, B, C): return B * numpy.exp(-A*x*x) + C
+L4(x, A, B, C): return B * numpy.exp(-A*x) + C
+L5(x, A, B, C): return B * numpy.exp(-A*x) + C
+L6(x, A, B, C, D, E): q=1./(x+1)/(x+1); return A+B*q+C*q*q+0*q*q*q+D*numpy.exp(-E*x)
+X1(x, A, B, C): return A * numpy.exp(B*x) + C
+z1La(x, A, B): return - A / x + B
+z1Lb(x, A, B): return A - B / x/x
+z1Lc(x, A, B, C): return C - B / x - A/x/x
+z1Ld(x, A, B, C, D): return A - B / x - C/x/x - D/x/x/x
+z1Le(x, A, B, C): return -A*numpy.power(x, -B)+C
+einf(L, einf, Lcoef): return -einf - Lcoef/L

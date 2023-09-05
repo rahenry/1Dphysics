@@ -1,0 +1,10 @@
+input dmrg1
+gamma 0.554 0.562 20
+L 300
+bc 0
+N 3
+xkey' gamma
+fidelity_parameter gamma
+fidelity_delta 1E-4
+chi_max 50
+output" standard_output standard_graphs

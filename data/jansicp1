@@ -1,0 +1,22 @@
+method exact
+model_type SICP
+L 3
+bc 0
+N 3
+$m 100
+$lm 2.5
+lambda_real -0.2 $lm $m
+lambda_imag -0.2 $lm $m
+scale gamma
+add" jansicp1a
+
+OUTPUT
+new ncols=2 name=pf_test scale=4 dpi=400
+
+plot EP_Plot
+filter sset_name=jansicp1
+key=min_E_distance draw_eps=0 lab=open lab_col=white
+
+plot EP_Plot
+filter sset_name=jansicp1a
+key=min_E_distance draw_eps=0 lab=periodic lab_col=white

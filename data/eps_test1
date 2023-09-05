@@ -1,0 +1,7 @@
+method matrix
+skip_model 1
+N 3
+fix_pfs 1
+L 5
+phi 0.1
+gamma 0.1

@@ -1,0 +1,36 @@
+L 2 3 4 5 6 7 8
+N 3
+lambda 0.9
+phi 0
+bc 1
+method exact
+conserve None
+model_type fpzeros
+do" count_zeros
+
+SUBSET
+L 2 3 4 5 6
+N 4
+END
+SUBSET
+L 2 3 4 5
+N 5
+END
+SUBSET
+L 2 3 4
+N 6
+END
+SUBSET
+L 2 3 4
+N 7
+END
+SUBSET
+L 2 3 4
+N 8
+END
+
+OUTPUT
+new ncols=1 name=pf_test invis=1 nosize=1
+
+plot Table
+xkey=L ykey=N zkey=nzeros

@@ -1,0 +1,10 @@
+method ed2 exact
+gamma 0.01
+gamma 0.99
+L 2
+bc 0 1
+N 3
+xkey' gamma
+scale gamma
+output" standard_output
+conserve None

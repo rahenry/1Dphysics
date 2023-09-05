@@ -1,0 +1,9 @@
+N 3
+L 4
+bc 0
+conserve None
+method exact
+output" standard_output free_test1
+model_type SICP
+gamma 0.3
+switchConjTerm 1

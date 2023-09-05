@@ -1,0 +1,15 @@
+method exact
+L 5
+bc 0
+N 3
+xkeys" lambda phi
+xkeys" lambda
+skip_exact 1
+lambda 0.75
+lambda 0.75 0.97 20
+lambda 0.88 0.9 20
+phi 0 0.01
+conserve None
+
+output" trivial_test
+output" fin_cl_pf_trajectories_k fin_cl_pf_trajectories trivial_test

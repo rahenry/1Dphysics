@@ -1,0 +1,71 @@
+input dmrg1
+diag_method default
+$npoints 20
+
+$fp h
+$max 1.5
+
+model_type sxx
+bc 0
+
+n_states 2
+h -$max $max $npoints
+lambda -$max $max $npoints
+L 21
+
+output"
+conserve None
+
+OUTPUT
+new ncols=2 name=pf_test scale=4 dpi=400
+
+plot Plot2D
+xkey=lambda ykey=h key=entropy
+
+plot Plot2D
+xkey=lambda ykey=h key=e_0
+
+plot Plot2D
+xkey=lambda ykey=h key=e_1
+
+plot Plot2D
+xkey=lambda ykey=h key=gap_1
+
+plot Plot2D
+xkey=lambda ykey=h key=mag_z
+
+plot Plot2D
+xkey=lambda ykey=h key=mag_x
+
+plot Plot2D
+xkey=lambda ykey=h key=mag_y
+
+plot Plot2D
+xkey=lambda ykey=h key=con_z
+
+plot Plot2D
+xkey=lambda ykey=h key=con_x
+
+plot Plot2D
+xkey=lambda ykey=h key=con_y
+
+plot Plot2D
+xkey=lambda ykey=h key=e_exact
+
+plot Plot2D
+xkey=lambda ykey=h key=e_error
+
+new ncols=2 name=fig1 scale=4 dpi=400
+
+$p1 xkey=lambda ykey=h xlab=$\lambda$ ylab=$h$
+plot Plot2D
+$p1 key=entropy lab=$S$
+
+plot Plot2D
+$p1 key=mag_z lab=$\langle\sum_j\sigma_j^z\rangle$
+
+plot Plot2D
+$p1 key=con_z lab=$\langle\sigma^z_{L/2}\sigma^z_{L/2+1}\rangle$
+
+plot Plot2D
+$p1 key=con_x lab=$\langle\sigma^x_{L/2}\sigma^x_{L/2+1}\rangle$

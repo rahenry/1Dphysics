@@ -1,0 +1,56 @@
+method exact
+L 4
+N 2
+find_eps2 1
+add_ep_systems 1
+add_regular_systems 0
+analyse_eigs 1
+q0 -3.1
+q1 0.1
+k0 -0.1
+k1 3.1
+
+$f1 filter ep_ind=1
+$f2 filter ep_ind_offset=0
+$f3 filter ep_ind=0
+OUTPUT
+new ncols=4 name=matrix_info scale=2 spacing=0.05
+
+plot MatrixInfo
+$f1
+message EP \\ $N={s['N']}$ \\ $L={s['L']}$ \\ $\lambda = {s['lambda']:.4f}$ \\ $\phi = {s['phi']:.4f}$
+plot MatrixPlot
+$f1
+key=deltaLR
+plot MatrixPlot
+$f1
+key=overlapLRnc
+plot MatrixPlot
+$f1
+key=overlapRR
+
+plot MatrixInfo
+$f2
+message EP, $PT$-symmetric \\ $N={s['N']}$ \\ $L={s['L']}$ \\ $\lambda = {s['lambda']:.4f}$ \\ $\phi = {s['phi']:.4f}$
+plot MatrixPlot
+$f2
+key=deltaLR
+plot MatrixPlot
+$f2
+key=overlapLRnc
+plot MatrixPlot
+$f2
+key=overlapRR
+
+plot MatrixInfo
+$f3
+message EP, trivial \\ $N={s['N']}$ \\ $L={s['L']}$ \\ $\lambda = {s['lambda']:.4f}$ \\ $\phi = {s['phi']:.4f}$
+plot MatrixPlot
+$f3
+key=deltaLR
+plot MatrixPlot
+$f3
+key=overlapLRnc
+plot MatrixPlot
+$f3
+key=overlapRR

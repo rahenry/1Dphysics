@@ -1,0 +1,18 @@
+method poly
+L 6 7
+bc 0
+N 2 3
+xkey' gamma
+xkey' phi
+output" fin_complexlambda3 fin_complexlambda2
+output" fin_complexlambda_multi
+output" fin_cl_pf_trajectories
+max_sweeps 15
+chi_max 50
+gamma 0.2 0.8 21
+phi 0. 1.0 51
+conserve None
+n_points_generated all
+n_bins' 500
+multiplot_ncols' 3
+multiplot_split" a b c

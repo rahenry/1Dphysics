@@ -1,0 +1,6 @@
+method matrix
+L 4
+N 3
+lambda 1.0
+phi 0. 0.1 0.5
+bc 0

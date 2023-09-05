@@ -1,0 +1,20 @@
+L 3
+N 3
+lambda 0.5 1.
+phi 0 0.2 0.5
+bc 1
+method ed3
+method ed3 exact
+conserve None
+model_type fp
+do" count_zeros
+swapXZ 1
+
+OUTPUT
+new ncols=3 name=pf_test scale=2 dpi=400 transpose=0 fontscale=0.8
+
+plot Scatter
+# xlab=none ylab=none xinclude=0 yinclude=0 label_pos=upper__left order=bc,L,N
+scatter key=energies colour=rand markersize=0.7 cmap=plasma
+
+# plot QNPlot

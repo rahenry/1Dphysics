@@ -1,0 +1,10 @@
+method exact
+model_type SICP
+L 3
+bc 1
+N 3
+$m 100
+$lm 2.5
+lambda_real -3.5 2.5 $m
+lambda_imag -0.2 3.0 $m
+scale gamma

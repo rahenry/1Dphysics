@@ -1,0 +1,41 @@
+input dmrg1
+diag_method default
+
+$fp h
+fidelity_parameter $fp
+fidelity_delta 1E-8
+
+model_type sxx
+n_states 3
+L 51
+bc 0
+
+lambda 1
+h 0.9 1.1 50
+
+output" test5
+conserve None
+
+OUTPUT
+new ncols=1 name=pf_test scale=4 dpi=400
+
+plot LinePlot
+xkey=$fp key=fidelity ymax=5 markersize=1.2 xlab=$h$ ylab=$f$
+
+plot LinePlot2
+# xkey=$fp key=fsL xlab=$h$ ylab=$f_s$
+#xkey=h key=fsL xlab=$h$ ylab=$f_s$ ymin=0 ymax=0.001
+# xkey=$fp key=fsL xlab=$h$ ylab=$f_s$ ymax=1E-6 ymin=0
+xkey=$fp key=fsL xlab=$h$ ylab=$f_s$ ymax=0.01 ymin=0
+
+plot LinePlot
+xkey=$fp key=e_0
+
+plot LinePlot
+xkey=$fp key=e_exact
+
+plot LinePlot
+# xkey=$fp key=fsL xlab=$h$ ylab=$f_s$
+#xkey=h key=fsL xlab=$h$ ylab=$f_s$ ymin=0 ymax=0.001
+# xkey=$fp key=fsL xlab=$h$ ylab=$f_s$ ymax=1E-6 ymin=0
+xkey=$fp key=fsL xlab=$h$ ylab=$f_s$ ymax=0.5 ymin=0

@@ -1,0 +1,11 @@
+method matrix
+skip_model 1
+output" fin_cl_pf_trajectories
+N 3
+M' 2
+fix_pfs 1
+L 12
+lambda 0.8913394055
+phi -0.81 -0.83 100
+xkeys" phi gamma
+depth 2

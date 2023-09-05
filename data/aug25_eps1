@@ -1,0 +1,10 @@
+N 3
+L 5
+method find_eps
+ylim0 0.85
+ylim1 1.1
+xlim0 0.01
+xlim1 0.99
+clim0 1.2
+lambda_grid_npoints 100
+purge_graphs' 0

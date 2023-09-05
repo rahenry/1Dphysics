@@ -1,0 +1,38 @@
+method matrix
+L 4
+N 3
+$m 100
+lambda_real -1.1 1.1 $m
+lambda_imag -1.1 1.1 $m
+conserve Q
+calc_spectrum 1
+
+q0 -3.142
+q1 3.142
+k0 -3.142
+k1 3.142
+find_eps2 1
+
+skip_model 1
+fix_pfs 1
+
+OUTPUT
+new ncols=3 name=pf_test scale=4
+
+$f1 filterL=4
+
+plot EP_Plot
+$f1
+key=epk draw_eps=1
+
+plot EP_Plot
+$f1
+key=min_pf_distance0 draw_eps=1
+
+plot EP_Plot
+$f1
+key=min_pf_distance0 draw_eps=1
+
+plot EP_Plot
+$f1
+key=min_E_distance draw_eps=1

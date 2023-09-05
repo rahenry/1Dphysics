@@ -1,0 +1,9 @@
+L 3
+N 6
+lambda 0.001 0.999 5
+phi 0
+bc 1
+method exact
+conserve None
+model_type fp
+do" periodic_lambda_test

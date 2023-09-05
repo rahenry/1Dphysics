@@ -1,0 +1,11 @@
+method exact
+output" standard_output
+gamma 0.4425 0.445 5
+phi 0.217 0.218 5
+N 3
+M' 2
+fix_pfs 1
+chi_max 100
+L 7
+gamma 0.458322
+phi 0.15875

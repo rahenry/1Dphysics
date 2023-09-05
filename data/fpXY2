@@ -1,0 +1,18 @@
+model_type fp
+method exact
+gamma 0.3 0.5 0.7
+gamma 0.2
+L 6
+bc 0
+do nonh_overlap
+hc 0
+N 3
+eta 0
+thetaX 0.0
+phi 0.0 0.666 20
+phi 0
+eta 0.0 1.0 11
+gamma 0.01 0.99 11
+thetaZ 0
+output_mode exact_test
+flipZ 0 1

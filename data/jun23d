@@ -1,0 +1,16 @@
+max_S_err 1E-6
+input dmrg1
+L 60 100 140 180 200 220 240 260
+bc 0
+N 3
+xkey' gamma
+fidelity_parameter gamma
+fidelity_delta 1E-5
+output" standard_output standard_graphs
+max_sweeps 15
+chi_max 50
+expand" gamma
+expand_fun" 0.5 * s['L'] / 10000.0
+expand_npoints' 20
+expand_delta' 0.0015
+max_S_err 1E-6

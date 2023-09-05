@@ -1,0 +1,7 @@
+method matrix
+gamma 0.1 0.2 100
+phi 0.1 0.2 1000
+L 100
+bc 0
+N 3
+skip_model 1

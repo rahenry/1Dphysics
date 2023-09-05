@@ -1,0 +1,18 @@
+method exact
+L 4
+bc 0
+N 4
+xkey' gamma
+fidelity_parameter gamma
+fidelity_delta 1E-6
+output" standard_output standard_graphs
+output" fptest1
+max_sweeps 15
+chi_max 50
+phi 0
+flipZ 0 1
+phi 0 0.166666 0.3333333 0.083333333
+flipZ 0
+gamma 0.3 0.7
+conserve None
+swapXZ 1

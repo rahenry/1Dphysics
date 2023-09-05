@@ -1,0 +1,3 @@
+'fsL', ylims=[-30, 10], name='test'
+'x', ylims=[-30, 10], name='test'
+'z', ylims=[-30, 10], name='test'

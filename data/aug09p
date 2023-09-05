@@ -1,0 +1,9 @@
+input dmrg1
+method matrix dmrg
+method matrix exact
+L 4 5 6 7
+output" gse_test
+gamma 0.4981 0.5
+phi 0.2 0.5
+N 2
+conserve None

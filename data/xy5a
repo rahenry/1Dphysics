@@ -1,0 +1,53 @@
+method matrix
+model_type xyh
+L 4 6 10
+N 2
+$m 50
+$lr 2.0
+$li 3.0
+gamma_real -$lr $lr $m
+gamma_imag -$li $li $m
+conserve None
+make_systems' 1
+scale lambda
+mu 0
+L_offset 2
+fix_pfs 1
+skip_model 1
+measure_all_dist 0
+
+q0' -3.142
+q1' 3.142
+k0' -3.142
+k1' 3.142
+find_eps2 1
+free_test 0
+
+$o1 cbar_pos=lower__right no_rotate=0
+
+OUTPUT
+new ncols=2 name=plot1 scale=4
+
+plot EP_Plot
+key=epk draw_eps=1 $o1
+filter L=4
+
+plot EP_Plot
+key=min_pf_distance0 draw_eps=1 $o1
+filter L=4
+
+plot EP_Plot
+key=epk draw_eps=1 $o1
+filter L=6
+
+plot EP_Plot
+key=min_pf_distance0 draw_eps=1 $o1
+filter L=6
+
+plot EP_Plot
+key=epk draw_eps=1 $o1
+filter L=10
+
+plot EP_Plot
+key=min_pf_distance0 draw_eps=1 $o1
+filter L=10

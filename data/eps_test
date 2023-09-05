@@ -1,0 +1,8 @@
+method exact
+fix_pfs 1
+phi 0
+gamma 0.1
+n_states 515377520732011331036461129765621272702107522001
+conserve None
+N 3
+L 100

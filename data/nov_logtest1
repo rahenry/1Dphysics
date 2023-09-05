@@ -1,0 +1,5 @@
+input dmrg1
+
+L 5
+lambda 0.1 1.0 10
+max_sweeps 2

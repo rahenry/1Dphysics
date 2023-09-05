@@ -1,0 +1,20 @@
+L 3
+N 6
+lambda 0.2
+phi 0
+bc 1
+method exact
+conserve None
+model_type fp
+do" periodic_lambda_test
+analyse_eigs 1
+
+OUTPUT
+new ncols=2 name=pf_test scale=2 dpi=400 transpose=1 fontscale=0.6
+
+plot MatrixPlot
+key=deltaLR
+plot MatrixPlot
+key=overlapLRnc
+plot MatrixPlot
+key=overlapRR

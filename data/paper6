@@ -1,0 +1,18 @@
+method exact
+L 4
+N 3
+lambda 1.0
+phi 0. 0.1 0.5
+bc 0
+
+OUTPUT
+new ncols=3 name=pf_test scale=2 dpi=400
+
+plot ETest
+filter phi=0
+
+plot ETest
+filter phi=0.1
+
+plot ETest
+filter phi=0.5

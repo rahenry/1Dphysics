@@ -1,0 +1,20 @@
+N 3
+L 2 3 4 5
+bc 1
+method ed3
+conserve None
+model_type fp
+swapXZ 1
+lambda 1.0
+phi 0
+
+OUTPUT
+new ncols=1 name=pf_test invis=1 nosize=1 scale=4
+
+plot ZeroTable
+fsize=8
+
+new ncols=1 name=pf_test invis=1 nosize=1
+
+plot Table
+xkey=L ykey=N zkey=nzeros

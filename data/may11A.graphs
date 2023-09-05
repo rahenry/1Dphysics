@@ -1,0 +1,2 @@
+$x z name='xz', markersize=3.5, aspect=1
+@'fsL', ylims=[-10, 10], name='chiA'

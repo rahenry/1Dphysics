@@ -1,0 +1,9 @@
+method exact
+model_type fpXYW
+N 3
+eta 0.3 0.5 0.7
+kappa 0.3 0.5 0.7
+gamma 0
+L 7
+xkey eta
+output" fig_XYW_1

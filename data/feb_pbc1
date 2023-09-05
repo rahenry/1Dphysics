@@ -1,0 +1,10 @@
+L 3 4 5 6
+N 3
+L 5
+N 5
+lambda 0.1
+bc 1
+model_type fpzeros
+swapXZ 0 1
+method exact
+do" simple_zero_test

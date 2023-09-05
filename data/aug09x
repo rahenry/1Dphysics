@@ -1,0 +1,10 @@
+method matrix
+skip_model 1
+L 100 110 2
+output" mtest3
+gamma 0.45 0.55 51
+phi 0.45 0.50 51
+gamma 0.45 0.55 81
+phi 0.45 0.50 81
+N 3
+M' 2

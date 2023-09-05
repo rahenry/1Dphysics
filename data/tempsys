@@ -1,0 +1,13 @@
+
+N 3
+method matrix
+quiet 1
+phi 0 0.1
+angle_style 0
+fix_pfs 1
+conserve None
+phi -0.26731467393636665
+lambda 0.7601650714200692
+L 4
+N 3
+ calc_spectrum 1

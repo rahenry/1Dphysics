@@ -1,0 +1,39 @@
+input dmrg1
+
+chi_max 55
+svd_min 1E-15
+max_E_err 1E-6
+max_S_err 1E-5
+active_sites 1
+start_env 100
+update_env 100
+N_sweeps_check 1
+trunc_cut 1E-16
+max_hours 10
+min_sweeps 4
+max_sweeps 30
+mixer 1
+amplitude 1E-3
+decay 2
+disable_after 20
+
+model_type sxx
+diag_method default
+bc 0
+h 0.2 1.8 10
+lambda 0.5
+N 2
+output" standard_output test5
+conserve None
+detect_phase 1
+fidelity_parameter h
+fidelity_delta 1E-6
+
+
+n_states 2
+L 2
+bc infinite
+L 31
+h 1.45
+h 1.0 1.5 10
+bc 0

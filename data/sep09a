@@ -1,0 +1,18 @@
+method matrix
+L 100 110 1
+L 100
+L 30
+L 100
+N 3
+lambda 1.5 0.5
+phi 0 0.1 0.5
+phi 0.1
+phi 0.1
+phi 0
+output" k_test plot_trajectories
+trajectory_xkeys" lambda
+trajectory_zkeys" ks pfs
+trajectory_xkeys" L
+trajectory_npoints' 5
+conserve None
+angle_style 0

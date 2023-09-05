@@ -1,0 +1,47 @@
+input dmrg1
+$n 10
+gamma 0.38 0.62 $n
+L 10 20
+bc 0
+N 3
+xkey' gamma
+fidelity_parameter gamma
+fidelity_delta 1E-5
+max_sweeps 20
+chi_max 20
+max_S_err 1E-4
+output"
+scale gamma
+
+$s1 markersize=0.8
+
+OUTPUT
+new ncols=3 name=pf_test scale=2.5 dpi=400
+
+plot Scatter
+xkey=gamma zkey=L ymin=0 ymax=1 xlab=$\gamma$ ylab=$\langle{L_0}|R_0\rangle$ lab=(a) xtrans=gamma
+filter sset_name=$NAME
+scatter key=o $s1
+
+plot Scatter
+filter sset_name=$NAME
+xkey=gamma zkey=L ymax=180 ymin=-500 xlab=$\gamma$ ylab=$\Re(\chi)$ lab=(b)
+scatter key=fsusceptibility $s1
+
+plot Scatter
+filter sset_name=$NAME2
+xkey=gamma zkey=L ymax=250 ymin=0 xlab=$\gamma$ ylab=$\Re(\chi)$ lab=(c)
+scatter key=fsusceptibility $s1
+
+new ncols=2 name=conv_test scale=2.5 dpi=400
+
+plot Scatter
+xkey=gamma zkey=L xlab=$\gamma$ ylab=$e_0$
+filter sset_name=$NAME
+scatter key=e_exact $s1 colour=red marker=x markersize=4 mew=0.5
+scatter key=e_0 $s1
+
+plot Scatter
+xkey=gamma zkey=L xlab=$\gamma$ ylab=$\log_{10}(\textrm{Error}(e_0))$
+filter sset_name=$NAME
+scatter key=e0_error $s1 transy=log10

@@ -1,0 +1,16 @@
+method matrix poly
+method matrix
+L 50 100
+bc 0
+N 3
+xkeys" phi gamma
+output" standard_output gse_test standard_graphs
+output" complex_plot standard_output gse_test
+output" gse_test
+output" fin_cl_pf_trajectories
+graph_keys" e_0_real e_0_imag
+gamma 0.45 0.55 21
+phi 0. 1. 21
+conserve None
+angle_style 1
+do_rotations 1

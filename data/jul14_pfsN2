@@ -1,0 +1,25 @@
+method poly
+L 9 10
+bc 0
+N 2 3
+xkey' gamma
+xkey' phi
+output" fin_complexlambda3 fin_complexlambda2
+output" fin_complexlambda_multi
+output" fin_cl_multicomp
+max_sweeps 15
+chi_max 50
+phi 0. 0.5
+gamma 0.5 0.55 0.6 0.7
+gamma 0.2
+gamma 0.5
+gamma 0.001 0.999 51
+gamma 0.5 0.7 51
+phi 0. 1.0 201
+phi 0.3 0.7 51
+phi 0. 1.0 51
+conserve None
+n_points_generated 1000
+n_bins' 500
+multiplot_ncols' 3
+multiplot_split" a b c

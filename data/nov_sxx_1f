@@ -1,0 +1,37 @@
+input dmrg1
+
+chi_max 50
+svd_min 1E-15
+mixer 0
+max_E_err 1E-10
+max_S_err 1E-7
+active_sites 2
+start_env 100
+update_env 100
+N_sweeps_check 1
+trunc_cut 1E-10
+max_hours 10
+min_sweeps 4
+max_sweeps 10
+
+model_type sxx
+n_states 2
+diag_method default
+L 61
+bc 0
+fidelity_parameter h
+fidelity_delta 1E-6
+h 0.2 1.8 100
+lambda 0.5
+N 2
+output" standard_output
+conserve None
+
+OUTPUT
+new ncols=1 name=pf_test scale=4 dpi=400
+
+plot LinePlot
+xkey=h key=fidelity ymax=5 markersize=1.2 xlab=$h$ ylab=$f$
+
+plot LinePlot
+xkey=h key=fsL xlab=$h$ ylab=$f_s$ ymax=0.5 ymin=0

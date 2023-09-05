@@ -1,0 +1,12 @@
+input dmrg1
+N 2
+gamma 0.1
+L 5
+bc 0
+max_E_err 1E-8
+max_S_err 1E-6
+max_sweeps 5
+chi_max 10
+chi_min 10
+conserve Q
+svd_min 0

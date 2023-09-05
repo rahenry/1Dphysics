@@ -1,0 +1,14 @@
+import dmrg1
+model_type fp
+bc 0
+hc 0
+N 3
+gamma 0
+L 10
+xkey gamma
+fidelity_parameter gamma
+fidelity_delta 1E-4
+gamma 0.2 0.7 20
+diag_method arpack_eigs
+max_E_err 1E-7
+max_S_err 1E-6

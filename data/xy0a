@@ -1,0 +1,22 @@
+method matrix
+model_type xyh
+L 8 10 12 14 16
+N 2
+gamma_real 0.5
+gamma_imag 0.5
+h 0
+bc 0
+L_offset 2
+skip_model 1
+
+q0' -3.142
+q1' 3.142
+k0' -3.142
+k1' 3.142
+find_eps2 1
+
+conserve None
+make_systems' 1
+scale lambda
+mu 0
+L_offset 2

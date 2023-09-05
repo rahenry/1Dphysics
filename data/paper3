@@ -1,0 +1,23 @@
+method matrix
+L 8
+bc 0
+N 3
+xkeys" lambda phi
+skip_model 1
+skip_exact 1
+output" cl_spectrum_trajectory
+output" plot_trajectories
+output" fin_traject_multiplot
+output" fin_cl_pf_trajectories
+trajectory_zkeys" pfs
+trajectory_xkeys" lambda phi
+lambda 0.01 2.0 101
+phi 0 1.0 51
+conserve None
+n_points_generated all
+n_bins' 500
+multiplot_ncols' 3
+multiplot_split" a b c
+do_rotations 1
+angle_style 1
+multiplot_targets" pfs energies pf_traj

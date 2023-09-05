@@ -1,0 +1,40 @@
+method matrix
+L 30
+N 3
+$m 100
+lambda_real -1.1 1.1 $m
+lambda_imag -1.1 1.1 $m
+mu 0
+
+add" $NAMEa $NAMEb $NAMEc
+
+q0 -3.142
+q1 3.142
+k0 -3.142
+k1 3.142
+find_eps2 1
+
+skip_model 1
+fix_pfs 1
+make_systems' 1
+
+$o1 cbar_pos=lower__right
+
+OUTPUT
+new ncols=2 name=pf_test scale=4
+
+plot EP_Plot
+filter sset_name=$NAME
+key=min_pf_distance0 draw_eps=1 $o1
+
+plot EP_Plot
+filter sset_name=$NAMEa
+key=min_pf_distance0 draw_eps=1 $o1
+
+plot EP_Plot
+filter sset_name=$NAMEb
+key=min_pf_distance0 draw_eps=1 $o1
+
+plot EP_Plot
+filter sset_name=$NAMEc
+key=min_pf_distance0 draw_eps=1 $o1

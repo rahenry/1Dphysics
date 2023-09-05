@@ -1,0 +1,23 @@
+bc 0
+N 3
+fidelity_parameter gamma
+fidelity_delta 1E-5
+chi_max 10 20
+gamma 0.5
+L 10 20 30 40 50
+input dmrg1
+scale gamma
+max_sweeps 5
+
+OUTPUT
+new ncols=3 name=pf_test scale=2.5 dpi=400
+
+plot Scatter
+xkey=L zkey=chi_max
+filter N=3
+scatter key=o
+
+plot Scatter
+xkey=L zkey=chi_max
+filter N=3
+scatter key=e0_error transy=log10

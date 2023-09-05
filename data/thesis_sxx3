@@ -1,0 +1,38 @@
+input dmrg1
+diag_method default
+$npoints 200
+
+$fp h
+
+model_type sxx
+bc 0
+
+n_states 2
+h 0.79 1.21 $npoints
+lambda 0.2
+L 21 51 101
+
+output"
+conserve None
+
+$p1 xkey=lambda ykey=h xlab=$\lambda$ ylab=$h$
+
+OUTPUT
+new ncols=2 name=pf_test scale=4 dpi=400
+
+plot LinePlot
+filter L=21
+xkey=h key=entropy
+
+plot LinePlot
+filter L=21
+xkey=h key=mag_z
+
+plot LinePlot
+filter L=51
+xkey=h key=entropy
+
+plot LinePlot
+filter L=51
+xkey=h key=mag_z
+

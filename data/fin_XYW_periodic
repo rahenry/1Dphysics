@@ -1,0 +1,19 @@
+method exact
+model_type fpXYW
+N 3
+mplus 0 1
+eta 0.3 0.5
+kappa 0.5 0.7
+gamma 0
+L 4 5
+bc 0 1
+xkey eta
+output_mode" pf_tester fig_XYW_periodic
+skip_left 1
+L 7 8
+L 4 5 6 7 8
+mplus 0
+eta 0.3
+kappa 0.7
+bc 1
+L 4 5 6 7

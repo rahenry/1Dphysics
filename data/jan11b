@@ -1,0 +1,20 @@
+method exact
+model_type fpXYW
+L 3 4 5 6 7 8
+bc 0 1
+N 3
+$m 20
+eta 0.5
+kappa 0.5
+gamma 0.0
+scale gamma
+
+OUTPUT
+new ncols=4 name=pf_test scale=2 dpi=400
+
+plot Scatter
+label_pos=upper__left fs_ticks=9 fs_labs=8
+scatter colour=red key=energies_pf marker=x markersize=7 mew=0.8
+scatter colour=blue key=energies markersize=2.0
+
+conserve None

@@ -1,0 +1,15 @@
+method dmrg
+chi_max 20
+svd_min 1E-8
+mixer 0
+max_E_err 1E-7
+max_S_err 1E-4
+active_sites 2
+start_env 100
+update_env 100
+N_sweeps_check 1
+trunc_cut 1E-10
+max_hours 10
+diag_method arpack_eigs
+min_sweeps 4
+max_sweeps 10

@@ -1,0 +1,50 @@
+method exact
+L 4
+N 3
+$m 10
+lambda 0.738 0.755 $m
+phi 1.5
+calc_spectrum 1
+
+find_eps2 1
+analyse_eigs 1
+
+q0 -3.1
+q1 0.1
+k0 -0.1
+k1 3.1
+
+OUTPUT
+new ncols=2 name=matrix_info scale=4
+
+plot LinePlot
+filter L=4
+xkey=lambda key=e_0
+
+plot LinePlot
+filter L=4
+xkey=lambda key=min_E_distance
+
+plot LinePlot
+filter L=4
+xkey=lambda key=min_pf_distance0
+
+plot LinePlot
+filter L=4
+xkey=lambda key=min_overlap
+
+plot LinePlot
+filter L=4
+xkey=lambda key=pfs
+
+plot LinePlot
+filter L=4
+xkey=lambda key=overlapLR_diag
+
+plot LinePlot
+filter L=4
+xkey=lambda key=overlapLRnc_diag
+
+plot LinePlot
+filter L=4
+xkey=lambda key=energies

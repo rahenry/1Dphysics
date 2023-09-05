@@ -1,0 +1,18 @@
+method poly
+L 10
+bc 0
+N 2
+lambda 1
+xkey' gamma
+max_sweeps 15
+phi 0. 0.5 1.0 0.2 0.3 0.7
+conserve None
+n_points_generated all
+n_bins' 500
+multiplot_ncols' 3
+multiplot_split" a b c
+label_loc" upper left
+output" fin_complexlambda3 fin_complexlambda2
+output" fin_complexlambda_multi
+output" fin_complexlambda_multi
+output" fin_cl1_multiplot

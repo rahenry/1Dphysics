@@ -1,0 +1,23 @@
+method exact
+model_type fpXYW
+L 3 4 5 6 7
+bc 0 1
+N 3
+$m 20
+eta 0.3
+kappa 0.7
+gamma 0.0
+thetaX 0.0 0.2 0.5
+thetaY 0. 0.2
+scale gamma
+
+OUTPUT
+new ncols=4 name=pf_test scale=4 dpi=400
+
+plot Scatter
+#xlab=$\Re(E)$ ylab=$\Im(E)$ lim_buffer=0.1 xinclude=0 yinclude=0 label_pos=upper__left
+xlab=$\Re(E)$ ylab=$\Im(E)$
+scatter colour=red key=energies_pf marker=x markersize=5 mew=0.5
+scatter colour=blue key=energies markersize=1.2
+
+conserve None

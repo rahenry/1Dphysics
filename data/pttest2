@@ -1,0 +1,9 @@
+input dmrg1
+gamma 0.9 0.55 0.45 0.1
+L 20 30
+bc 0
+N 3
+max_E_err 1E-8
+max_S_err 1E-5
+swapXZ 1
+conserve None

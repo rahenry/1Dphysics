@@ -1,0 +1,10 @@
+N 3
+method exact
+quiet 1
+phi 0 0.1
+angle_style 0
+fix_pfs 1
+conserve None
+phi 0
+lambda 0.1
+L 3

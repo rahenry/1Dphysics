@@ -1,0 +1,35 @@
+N 3
+L 2 3 4 5 6 7 8 9
+bc 1
+method ed3
+conserve None
+model_type fp
+swapXZ 1
+lambda 5.0
+phi 0
+
+SUBSET
+N 4
+L 2 3 4 5 6 7
+END
+
+
+OUTPUT
+new ncols=1 name=pf_test invis=1 nosize=1 scale=4
+
+plot ZeroTableR
+
+new ncols=1 name=test invis=1 nosize=1
+
+plot Table2
+xkey=L ykey=N
+
+new ncols=1 name=test2 invis=1 nosize=1
+
+plot Table
+xkey=L ykey=N key=n_degens_nonzero
+
+new ncols=1 name=test3 invis=1 nosize=1
+
+plot Table
+xkey=L ykey=N key=n_degens_total

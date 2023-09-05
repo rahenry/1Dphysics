@@ -1,0 +1,14 @@
+input dmrg1
+model_type fp
+gamma 0.501
+L 50
+bc 0
+do nonh_overlap
+hc 0
+N 3
+diag_method arpack
+chi_max 15
+n_states 1
+flipZ 0
+max_sweeps 11
+max_hours 0.12

@@ -1,0 +1,3 @@
+input paper_rev_3
+lambda_real -0.7 -0.3 $m
+lambda_imag 0.65 1.05 $m

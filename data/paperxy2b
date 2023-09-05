@@ -1,0 +1,54 @@
+method matrix
+model_type xyh2
+L 10 20 50
+N 2
+$m 100
+$lr 1.5
+$li 1.5
+eta_real -$lr $lr $m
+eta_imag -$li $li $m
+conserve None
+make_systems' 1
+scale lambda
+mu 0
+L_offset 2
+fix_pfs 1
+skip_model 1
+measure_all_dist 0
+skip_trivial_EPs' 1
+
+q0' -2.5
+q1' 2.5
+k0' 0.0
+k1' 1.5707964
+find_eps2 1
+free_test 0
+
+$o1 cbar_pos=lower__right no_rotate=1 skip_trivial=0 two_colour_EPs=1 xkey=eta labkey=\lambda
+
+OUTPUT
+new ncols=2 name=plot1 scale=4
+
+plot EP_Plot
+key=epk draw_eps=1 $o1 lab=$LEQ10$
+filter L=10
+
+plot EP_Plot
+key=min_pf_distance0 draw_eps=1 $o1 lab=$LEQ10$
+filter L=10
+
+plot EP_Plot
+key=epk draw_eps=1 $o1 lab=$LEQ20$
+filter L=20
+
+plot EP_Plot
+key=min_pf_distance0 draw_eps=1 $o1 lab=$LEQ20$
+filter L=20
+
+plot EP_Plot
+key=epk draw_eps=1 $o1 lab=$LEQ50$
+filter L=50
+
+plot EP_Plot
+key=min_pf_distance0 draw_eps=1 $o1 lab=$LEQ50$
+filter L=50

@@ -1,0 +1,20 @@
+# demonstrates chi_max independence nicely
+input dmrg1
+model_type fp
+gamma 0.53 0.58 10
+L 10 50
+bc 0
+do nonh_overlap
+hc 0
+N 3
+diag_method arpack
+conserve Q
+chi_max 20 25
+n_states 1
+bc 0 1
+gamma 0.48 0.53
+gamma 0.41 0.45 10
+gamma 0.556 0.564 10
+L 60 70
+gamma 0.51 0.58 10
+L 10 20 30

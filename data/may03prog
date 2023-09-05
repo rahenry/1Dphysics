@@ -1,0 +1,15 @@
+input dmrg1 prog1
+gamma 0.5555 0.562 20
+L 400
+bc 0
+N 3
+xkey' gamma
+fidelity_parameter gamma
+fidelity_delta 1E-4
+prog_var' L
+prog_max' 600
+prog_delta' 50
+prog_mult' 1
+prog_type' int
+prog_cond' fsL1
+output" standard_output standard_graphs

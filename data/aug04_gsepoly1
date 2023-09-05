@@ -1,0 +1,15 @@
+input dmrg1
+L 5 10 1
+bc 0
+N 2 3
+xkey' L
+output" standard_output gse_test standard_graphs
+output" complex_plot standard_output gse_test
+output" gse_test
+max_sweeps 15
+graph_keys" e_0_real e_0_imag
+chi_max 50
+gamma 0.1 0.5 0.9
+phi 0. 0.1 0.5
+conserve None
+angle_style 1

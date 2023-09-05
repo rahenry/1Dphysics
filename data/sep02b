@@ -1,0 +1,10 @@
+method matrix
+L 50
+N 3
+lambda_real -1.1 -0.9 100
+lambda_imag -0.1 0.1 100
+skip_model 1
+fix_pfs 1
+output" cl_plot_grid2
+zpow_k' 0.2
+draw_minima' 0

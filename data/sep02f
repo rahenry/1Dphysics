@@ -1,0 +1,30 @@
+method matrix
+L 5 10
+N 2 3
+lambda_real -1.1 1.1 200
+lambda_imag -1.1 1.1 200
+
+q0 -3.142
+q1 3.142
+k0 -3.142
+k1 3.142
+find_eps2 1
+
+skip_model 1
+fix_pfs 1
+output" grid_plot
+zpow_k' 0.2
+draw_minima' 0
+plot_cols' 3
+plot1" type=image zkey=eps xkey=k_real ykey=k_imag cbar zpow=0.3
+plot1_target" N=2 L=!0
+plot2" type=image xkey=lambda_real ykey=lambda_imag zkey=min_pf_distance cbar zpow=1
+plot2_target" N=2 L=!0
+plot3" $plot2
+plot3_target" N=3 L=!0
+plot4" $plot1
+plot4_target" N=2 L=!1
+plot5" $plot2
+plot5_target" N=2 L=!1
+plot6" $plot2
+plot6_target" N=3 L=!1

@@ -1,0 +1,14 @@
+import dmrg1
+method exact dmrg
+L 4 5
+bc 0
+N 3
+xkey' gamma
+fidelity_parameter gamma
+fidelity_delta 1E-6
+output" standard_output standard_graphs
+max_sweeps 15
+min_sweeps 10
+chi_max 50
+phi 0
+gamma 0.6 0.8

@@ -1,0 +1,13 @@
+input dmrg1
+input tebd1
+model_type fp
+bc infinite
+L 2
+do nonh_overlap
+hc 0
+N 3
+diag_method arpack
+conserve Q
+chi_max 20
+n_states 1
+gamma 0.4 0.6 10

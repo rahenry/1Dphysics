@@ -1,0 +1,35 @@
+input dmrg1
+
+model_type sxx
+diag_method default
+L 20
+bc 1
+fidelity_parameter h
+fidelity_delta 1E-6
+$n 5
+h 0.01 2.0 $n
+lambda 0.01 2.0 $n
+N 2
+conserve None
+n_states 3
+
+SUBSET
+bc 0
+L 101
+END
+
+$c extent_left=0 extent_lower=0
+$a cmap=viridis cmin=0.3 cmax=1.0 cbar_pos=upper__right ylab=$h$
+$b cmap=inferno cmin=0.0 cmax=0.8 cbar_pos=lower__left cbar_side=right ylab=$h$
+
+OUTPUT
+new ncols=3 name=pf_test scale=3 dpi=400 fontscale=1
+
+plot Plot2D
+xkey=h ykey=lambda key=e_0 $b $c
+
+plot Plot2D
+xkey=h ykey=lambda key=e_exact $b $c
+
+plot Plot2D
+xkey=h ykey=lambda key=e0_error $a $c

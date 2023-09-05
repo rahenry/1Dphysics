@@ -1,0 +1,13 @@
+method matrix
+gamma 0.38 0.62 10
+L 10 12
+bc 0
+N 3
+xkey' gamma
+fidelity_parameter gamma
+fidelity_delta 1E-5
+output" standard_output
+max_sweeps 20
+chi_max 20
+max_S_err 1E-4
+conserve Q

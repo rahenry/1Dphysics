@@ -1,0 +1,37 @@
+method matrix
+L 4
+N 2 3
+$npoints 150
+$m 1.5
+lambda_real -0.1 1.6 $npoints
+lambda_imag -0.1 1.6 $npoints
+
+q0 -3.142
+q1 3.142
+k0 -3.142
+k1 3.142
+find_eps2 1
+
+calc_spectrum 1
+skip_model 1
+swap_lambda 0
+fix_pfs 1
+output" grid_plot sep06_test
+output" grid_plot
+plot_cols' 2
+plot1" type=image zkey=eps xkey=k_real ykey=k_imag cbar zpow=0.3 show_eps=1
+plot1_target" N=2 L=!0
+plot2" type=image zkey=eps xkey=k_real ykey=k_imag cbar zpow=0.3 show_eps=1
+plot2_target" N=3 L=!0
+plot3" type=image xkey=lambda_real ykey=lambda_imag zkey=min_pf_distance cbar zpow=1 show_eps=1 vmin=0
+plot3_target" N=2 L=!0
+plot4" type=image xkey=lambda_real ykey=lambda_imag zkey=min_pf_distance cbar zpow=1 show_eps=1 vmin=0
+plot4_target" N=3 L=!0
+plot5" type=image xkey=lambda_real ykey=lambda_imag cbar zkey=min_E_distance zpow=1 show_eps=1
+plot5_target" N=2 L=!0
+plot6" type=image xkey=lambda_real ykey=lambda_imag cbar zkey=min_E_distance zpow=1 show_eps=1
+plot6_target" N=3 L=!0
+plot7" type=image xkey=lambda_real ykey=lambda_imag zkey=min_pf_distance0 cbar zpow=1 show_eps=1 vmin=0
+plot7_target" N=2 L=!0
+plot8" type=image xkey=lambda_real ykey=lambda_imag zkey=min_pf_distance0 cbar zpow=1 show_eps=1 vmin=0
+plot8_target" N=3 L=!0

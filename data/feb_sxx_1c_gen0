@@ -1,0 +1,14 @@
+input dmrg1
+model_type sxx
+diag_method default
+L 20
+bc 1
+fidelity_parameter h
+fidelity_delta 1E-6
+h 0.01 2.0 5
+lambda 0.01 2.0 5
+N 2
+conserve None
+n_states 3
+bc 0
+L 101

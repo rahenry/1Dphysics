@@ -1,0 +1,11 @@
+method none
+model_type fpXYW
+N 3 4 5
+eta 0.2 0.8 5
+kappa 0.2 0.8 5
+L 7
+N 20
+xkey eta
+output_mode' show_spectrum_pf
+hc 0
+skip_left 1

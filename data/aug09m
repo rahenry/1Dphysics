@@ -1,0 +1,12 @@
+input matrix_reusable
+L 20 30 2
+output" mtest2
+gamma 0.475 0.525 21
+gamma 0.475 0.5 21
+gamma 0.3 0.7 51
+phi 0. 0.50 51
+gamma 0.3 0.7 51
+gamma 0.49 0.51 51
+phi 0. 0.50 51
+Ns" 3
+M' 2

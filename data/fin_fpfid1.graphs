@@ -1,0 +1,6 @@
+@'fsL', ylims=[-32, 10], name='chi_s', xlab=r'$\gamma$', ylab=r'$\chi_s$', markersize=3.5
+@'x', ylims=None, name='x1L', markersize=3.5
+@'z', ylims=None, name='z1L', markersize=3.5
+@'o', ylims=None, name='overlap', xlab=r'$\gamma$', ylab=r'overlap', markersize=2.5
+@'fidelity', ylims=None, name='fidelity', xlab=r'$\gamma$', ylab=r'$F$', markersize=3.5
+$x z name='xz', markersize=3.5, aspect=1

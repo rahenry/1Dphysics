@@ -1,0 +1,9 @@
+L 2 3
+N 6
+lambda 0.4
+phi 0
+bc 1
+method exact
+conserve None
+model_type fp
+do" count_zeros

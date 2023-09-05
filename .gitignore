@@ -1,0 +1,9 @@
+*
+!.gitignore
+!.projectile
+!data
+!data/*
+!*.sh
+!*.tex
+!*.py
+!*.sty

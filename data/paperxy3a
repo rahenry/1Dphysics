@@ -1,0 +1,31 @@
+model_type xyh
+method exact
+N 2
+L 4
+$m 10
+lambda 0.01 1.5 $m
+lambda 0.65 1.0 $m
+phi 0.11111
+calc_spectrum 1
+make_systems' 1
+
+find_eps2 1
+analyse_eigs 1
+load_only' 1
+
+q0 -3.1
+q1 0.1
+k0 -0.1
+k1 3.1
+
+OUTPUT
+new ncols=1 name=pf_test scale=4
+
+$pa pltargs linestyle=- markersize=1
+
+plot LinePlot
+filter sset_name=paperxy3a
+xkey=lambda_imag key=overlapLRnc_diag lab=(d) lab_col=white
+ylab=$\langle{}L|R{}\rangle$
+ymin=0 ymax=1
+$pa

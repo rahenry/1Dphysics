@@ -1,0 +1,11 @@
+L 3
+N 3
+lambda 0.1 10.0 10
+bc 1
+method exact
+conserve None
+model_type fp
+do" count_zeros
+swapXZ 0 1
+L 2
+N 4

@@ -1,0 +1,23 @@
+method exact
+
+$n 50
+
+$fp h
+fidelity_parameter $fp
+fidelity_delta 1E-4
+
+model_type sxx
+L 5
+bc 0
+
+lambda 0. 1. 5
+h 0. 0.5 5
+
+output" test5
+conserve None
+
+OUTPUT
+new ncols=1 name=pf_test scale=4 dpi=400
+
+plot Plot2D
+xkey=lambda ykey=h key=entropy

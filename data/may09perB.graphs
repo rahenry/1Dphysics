@@ -1,0 +1,4 @@
+@'fsL', ylims=[-32, 10], name='chi_s'
+@'o', ylims=None, name='overlap'
+@'fidelity', ylims=None, name='fidelity'
+$x z name='xz', markersize=3.5, aspect=1

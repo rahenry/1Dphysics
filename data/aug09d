@@ -1,0 +1,17 @@
+method matrix
+L 300
+bc 0
+N 3
+xkeys" phi gamma
+output" standard_output gse_test standard_graphs
+output" complex_plot standard_output gse_test
+output" fin_cl_pf_trajectories
+output" gse1 gse_test gap_test
+output" gse1 gap1 gse_test gap_test
+output" gap_test2
+graph_keys" e_0_real e_0_imag
+gamma 0.495 0.505 20
+phi 0.5 0.4
+conserve None
+angle_style 1
+do_rotations 1

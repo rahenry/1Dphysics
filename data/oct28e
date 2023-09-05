@@ -1,0 +1,38 @@
+input dmrg1
+# lambda_real -1.5 1.5 4
+# lambda 1.5
+lambda_imag 0
+lambda_real -0.5
+# lambda 1.5
+# phi 0.5
+L 15
+bc 0
+N 3
+mu -1
+fidelity_parameter lambda_real
+fidelity_delta 1E-5
+max_sweeps 20
+chi_max 20
+max_S_err 1E-7
+scale gamma
+scale lambda
+swapXZ 1
+conserve None
+:w alt_state 0
+
+
+OUTPUT
+new ncols=3 name=pf_test scale=2 dpi=400
+
+plot Scatter
+xkey=lambda_real zkey=L
+scatter key=e_0_real markersize=1.2 colour=blue
+scatter key=e_exact markersize=1.2 colour=red
+
+# plot Scatter
+# xkey=lambda_real zkey=L
+# scatter key=o markersize=1.2
+
+# plot Scatter
+# xkey=lambda_real zkey=L ymin=-10 ymax=10
+# scatter key=fsusceptibility_real markersize=1.2

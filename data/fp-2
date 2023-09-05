@@ -1,0 +1,15 @@
+input dmrg1
+model_type fp
+gamma 0.3 0.7 20
+L 20 30 40
+bc 0 1
+do nonh_overlap
+hc 0
+N 3
+diag_method arpack
+chi_max 20 30
+flipZ 1
+conserve None
+max_hours 0.3
+fidelity_parameter gamma
+fidelity_delta 1E-4

@@ -1,0 +1,57 @@
+method matrix
+L 5
+N 2 3 4
+$m 200
+lambda_real -1.1 1.1 $m
+lambda_imag -1.1 1.1 $m
+
+q0 -3.142
+q1 3.142
+k0 -3.142
+k1 3.142
+find_eps2 1
+
+skip_model 1
+fix_pfs 1
+make_systems' 1
+
+$o1 cbar_pos=lower__right
+$out min_pf_distance0
+
+OUTPUT
+new ncols=2 name=pf_test scale=4
+
+plot EP_Plot
+filter L=5
+key=epk draw_eps=1 $o1
+
+plot EP_Plot
+filter L=5 N=2
+key=$out draw_eps=1 $o1
+
+plot EP_Plot
+filter L=5 N=3
+key=$out draw_eps=1 $o1
+
+plot EP_Plot
+filter L=5 N=4
+key=$out draw_eps=1 $o1
+
+OUTPUT
+new ncols=2 name=pf_test_noX scale=4
+
+plot EP_Plot
+filter L=5
+key=epk draw_eps=0 $o1
+
+plot EP_Plot
+filter L=5 N=2
+key=$out draw_eps=0 $o1
+
+plot EP_Plot
+filter L=5 N=3
+key=$out draw_eps=0 $o1
+
+plot EP_Plot
+filter L=5 N=4
+key=$out draw_eps=0 $o1

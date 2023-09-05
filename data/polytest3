@@ -1,0 +1,12 @@
+method none
+model_type fpXYW
+N 3
+eta 0.15 0.33333333 0.5
+kappa 0.3333333 0.5
+L 3 25 1
+output_mode' polytest2
+poly_maxsteps' 500
+poly_precision' 500
+columns' 1
+labels' eta kappa
+text_loc' right

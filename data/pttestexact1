@@ -1,0 +1,9 @@
+input dmrg1
+method dmrg exact
+gamma 0.1
+L 5
+bc 0
+N 3
+max_E_err 1E-8
+max_S_err 1E-5
+conserve None

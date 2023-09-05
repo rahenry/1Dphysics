@@ -1,0 +1,14 @@
+input dmrg1
+gamma 0.51 0.9
+L 10
+bc 0
+N 3
+run_mode' prog
+fidelity_parameter gamma
+fidelity_delta 1E-4
+prog_var' L
+prog_max' 200
+prog_delta' 0
+prog_mult' 1.5
+prog_type' int
+prog_cond' fsL1

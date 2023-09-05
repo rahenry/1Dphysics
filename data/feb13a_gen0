@@ -1,0 +1,9 @@
+input fin_fpfid1
+output"
+gamma 0.38 0.62 10
+L 10 20
+input dmrg1
+scale gamma
+N 2
+hc 1
+diag_method default

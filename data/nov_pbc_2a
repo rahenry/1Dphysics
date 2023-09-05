@@ -1,0 +1,21 @@
+method ed2
+gamma 0.2 0.8 10
+L 6
+bc 1
+gamma 0.001 0.2 3
+N 3
+xkey' gamma
+output" standard_output
+conserve None
+do" analyse_zeros
+
+OUTPUT
+new ncols=3 name=pf_test scale=2 dpi=400
+
+plot LinePlot
+xkey=gamma key=e_0
+scatter colour=blue key=pfs
+
+plot Scatter
+xlab=$\Re(E)$ ylab=$\Im(E)$ lim_buffer=0.1 xinclude=0 yinclude=0 label_pos=upper__left xmin=-0.1 xmax=0.1 ymin=-0.1 ymax=0.1
+scatter colour=blue key=energies

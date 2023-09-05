@@ -1,0 +1,9 @@
+input dmrg1 prog1
+gamma 0.8 0.9
+L 3
+bc 0
+N 3
+xkey' L
+fidelity_parameter gamma
+fidelity_delta 1E-4
+prog_max' 5
